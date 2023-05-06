@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csoportos nevtan felvivő teszt
+    </title>
+    <!--script defer src="../../../Csoportos_Nevtan/NT_csoportos_ellatas.js"></script-->
+</head>
+<body>
+    <span class="text-info">Erre lehet cserélni </span>
+    <div id="Zoli-csoport-container">   
+        <div class="inputUjcsopi">
+            <h4 id="uj-csoport-h4">Új Csoport</h4>
+            <label for="csoport-neve">Csoport neve: </label><input type="text" id="csoport-neve" required value="Proba csoport"
+            >
+            <label for="oraHossza">Tevékenység hossza: </label><input type="number" min="45" step="5" id="oraHossza" required value="60">
+            <div id="Zoli-fejlesztesi-terv"> Random generált fejlesztési terv:
+                <p>Véletlenszerű gyógypedagógiai fejlesztési terv létrehozása a tárolt sablonokból:</p>
+            <div>
+                <label>Gyerekek kora: <input name="csoport-intezmenye" type="radio" id="intezmenye-ovoda" checked> Óvodás
+            <input name="csoport-intezmenye" type="radio" id="intezmenye-iskola"> Iskolás (alsó tagozat)</div>
+            </label>
+            <p> Megadok saját fejlesztési tervet: <button onclick="document.getElementById('Zoli-sajat-fejlesztesi-terv').showModal()  ">Terv beírása:</button> </p>
+            
+            <dialog id="Zoli-sajat-fejlesztesi-terv"> Tervem:<br>
+            <textarea name="sajat-fejlesztesi-terv" id="sajat-fejlesztesi-terv" cols="30" rows="10" placeholder="Ide írd /másold be a fejlesztési tervet, az órák anyagát pontosvesszővel (;-vel) elválasztva. pl.: Mintázatfelismerés fejlesztése; Grafomotorika fejlesztése; stb;"></textarea>
+                <br>
+                <button onclick="fejlTerv = fejlTervBonto(); document.getElementById('Zoli-sajat-fejlesztesi-terv').close()">Mentés</button>
+                <button onclick="document.getElementById('Zoli-sajat-fejlesztesi-terv').close()">Mégse</button>
+            
+        </dialog>
+        </div>
+            
+            <div><label> Ellátás napja: 
+            <input name="ellatas-napja" type="radio" id="hetfo" checked> H
+            <input name="ellatas-napja" type="radio" id="kedd"> K
+            <input name="ellatas-napja" type="radio" id="szerda"> Sze
+            <input name="ellatas-napja" type="radio" id="csutortok"> Cs
+            <input name="ellatas-napja" type="radio" id="pentek"> P
+            </label>
+            <br>
+            <button id="csoportMentes" onclick="csoportMentes()">Új csoport felvétele</button>
+                 
+        </div>
+    </div>
+    <div id="H-orak"><span id="H-szoveg"></span></div>
+    <div id="K-orak"><span id="K-szoveg"></span></div>
+    <div id="Sz-orak"><span id="Sz-szoveg"></span></div>
+    <div id="Cs-orak"><span id="Cs-szoveg"></span></div>
+    <div id="P-orak"><span id="P-szoveg"></span></div>
+
+    </div>
+<script>
+    let fejlTerv;
+    function fejlTervBonto(){
+        let nyersAdat = document.getElementById('sajat-fejlesztesi-terv').value.split(';')
+        return nyersAdat.map(item => {return item.trim()}).filter(trimmedItem => trimmedItem !='');   
+    }
+</script>
+</body>
+</html>
