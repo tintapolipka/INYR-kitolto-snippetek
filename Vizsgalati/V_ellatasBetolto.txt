@@ -1,34 +1,33 @@
-// Bebikázó funkció:
-//TODO: megcsinálni egy olyan funkciót, ami JSON-ból betölti az összes infót
+// V_ellatasBetolto ver 2023/24.01
 
 //Dev Tools/Sources/Snippets +New snippet -így lehet hozzáadni új kódot az oldalhoz.
 
 //Menü telepítő
 const appendMenu = `<div class="Zoli-container"><style>.Zoli-container{display: flex; flex-direction: column; z-index: 2000; position:fixed; top:0; right:0; background-color: lightgreen; padding: 10px;} .Zoli-container p {margin:0;} #BETOLTES{height:40px; } </style><p>Zoli menüje</p>
-<a href="https://docs.google.com/spreadsheets/d/1PNDCf7GQGnk9U823kebsadfdPy8rWOvI/edit#gid=1713518825" target="_blank" rel="noopener noreferrer">Beosztás link</a>
-<a href="https://docs.google.com/spreadsheets/d/1TIjP_fkl9PrxM7JKKqJHluWGV6wsI52ww90PbHfvi8w/edit#gid=0" class="megfigyeles-link" target="_blank">Megfigyelések</a>
+<button onclick="location.reload()">bezár (x)</button>
+<a href="https://docs.google.com/spreadsheets/d/1t1i6un7eAxYQWvkRzA5rgdsrn4u4OuRwKfLxJ7KnYaY/edit#gid=1713518825" target="_blank" rel="noopener noreferrer">Beosztás link</a>
+<a href="https://docs.google.com/spreadsheets/d/1nBVdmQx2P_EP8krfNJoXcmYaB0b0V59Uh-rbunUu56w/edit#gid=0" class="megfigyeles-link" target="_blank">Megfigyelések</a>
 <textarea name="tabalazat-adat" id="Zoli-tablazat-adat" cols="10" rows="2" placeholder="Ide másold az adatot"
 ></textarea>
 <button id="adat-bonto" onclick="adatBonto()">Új betöltése</button>
-<!--<button onclick="regiAdat()">régi használata</button>-->
 <span id="Aktualis-nev-Zoli"></span>
 </div> `;
 
 // legutóbbi adatok betöltése a localStorage-ből:
 function KiLocalStoragebol(){
-   if(localStorage.length>0)
-   {[vezeteknev, utonev,vizsgDatum, diagnozis, osztalyfok, hanyadikVizsg,megfigyelesVoltE, gyogyPed,pszichologus,OA, KerelmezoFehId,beErkezett,mikorFigyelteMeg,fvTaneve] = JSON.parse(localStorage['vizsgaltGyerek'])}
+   if(localStorage['vizsgaltGyerek'])
+   { [oktAz,vezeteknev, utonev,vizsgDatum, diagnozis, osztalyfok, hanyadikVizsg,megfigyelesVoltE, gyogyPed,pszichologus,OA, KerelmezoFehId,beErkezett,mikorFigyelteMeg,fvTaneve] = JSON.parse(localStorage['vizsgaltGyerek'])}
    else {console.log('A localStorage üres.')};
 }
 
 function menuTelepito(){document.body.innerHTML+=appendMenu;
    KiLocalStoragebol();
-   document.getElementById('Aktualis-nev-Zoli').innerText=`${vezeteknev} ${utonev}`;
+   document.getElementById('Aktualis-nev-Zoli').innerText=`${vezeteknev? vezeteknev :''} ${utonev? utonev: ''}`;
    
 }
 
 // A táblázatból kinyerhető adatok:
-let teljesnev, diagnozis,osztalyfok,vizsgDatum,masodikVD,harmadikVD,hanyadikVizsg,megfigyelesVoltE,gyogyPed,pszichologus,oktatasiInt,beErkezett,kiKeri;
+let oktAz, teljesnev, diagnozis,osztalyfok,vizsgDatum,masodikVD,harmadikVD,hanyadikVizsg,megfigyelesVoltE,gyogyPed,pszichologus,oktatasiInt,beErkezett,kiKeri;
 
 //származtatott adatok:
 let vezeteknev, utonev, OA, KerelmezoFehId, mikorFigyelteMeg ,fvTaneve;
@@ -37,10 +36,10 @@ let gyerekMindenAdata;
 
 function adatBonto(){
    if(!document.getElementById('Zoli-tablazat-adat').value){alert(`Nem illesztetted be az Adattal töltött BEOSZTÁS / adat fül megfelelő sorát a fehér mezőbe! Pótold, és próbáld újra. ${vezeteknev? 'VAGY: Használhatod a korábban mentett adatait annak a gyereknek akinek a neve a zöld mezőben olvasható!' : ''}`); return;};
-   localStorage.clear()
+   //localStorage.clear()
    let szetkapni = document.getElementById('Zoli-tablazat-adat').value;
    let darabolt = szetkapni.split(/\t/);
-    [teljesnev,,,,,diagnozis,osztalyfok,vizsgDatum,,masodikVD,,harmadikVD,,hanyadikVizsg,megfigyelesVoltE,,,gyogyPed,pszichologus,oktatasiInt,beErkezett,kiKeri] = darabolt;
+    [teljesnev,,oktAz,,,,diagnozis,osztalyfok,vizsgDatum,,masodikVD,,harmadikVD,,hanyadikVizsg,megfigyelesVoltE,,,gyogyPed,pszichologus,oktatasiInt,beErkezett,kiKeri] = darabolt;
 
       //Ha több vizsgálati dátuma is volt, a legutóbbi használata:
       harmadikVD? vizsgDatum= harmadikVD : masodikVD? vizsgDatum=masodikVD : vizsgDatum = vizsgDatum;
@@ -72,6 +71,7 @@ function adatBonto(){
        //Az osztályfok tartalmaz számot számot?
        /\d+/.test(osztalyfok) ? osztalyfok = +osztalyfok.match(/\d+/)[0] : 
        /csop|nagy|kis|közép/i.test(osztalyfok)? osztalyfok= 'ovodába járó' : '';
+       /éves/i.test(osztalyfok) && /3/.test(osztalyfok)?  osztalyfok= 'ovodába járó' : '';
  
        // Hányadik vizsgálat? ('aktuális' / 'fv' / 'rendkívüli fv')
        if(hanyadikVizsg !='OH kirendelés'){
@@ -83,12 +83,13 @@ function adatBonto(){
          
          if(megfigyelesVoltE){
          
-         kiFigyeltMeg = prompt('Ki végezte a megfigyelést? Kérlek írd be a monogrammját! Zsuzsi: ÉZS / Eszter: SZE / Zoli: MZG / Peti: FPZ / Alen: ZSA ');};
+         kiFigyeltMeg = prompt('Ki végezte a megfigyelést? Kérlek írd be a monogrammját! Brigi : BB / Eszter: SZE / Zoli: MZG / Peti: FPZ / Alen: ZSA ');};
          if(/zsu|Ézs/i.test(kiFigyeltMeg)){megfigyelesVoltE = '5277'};
          if(/eszt|sze/i.test(kiFigyeltMeg)){megfigyelesVoltE = '9770'};
          if(/zol|mzg/i.test(kiFigyeltMeg)){megfigyelesVoltE = '4268'};
          if(/pe|fpz/i.test(kiFigyeltMeg)){megfigyelesVoltE = '4978'};
          if(/ale|zsa/i.test(kiFigyeltMeg)){megfigyelesVoltE = '10646'};
+        if(/brig|BB/i.test(kiFigyeltMeg)){megfigyelesVoltE = '12470'};
          
          if(megfigyelesVoltE){
          mikorFigyelteMeg = prompt('Mikor történt a megfigyelés?');
@@ -130,6 +131,10 @@ function adatBonto(){
             gyogyPed ='1550';
             break;
 
+         case 'KLL':
+            gyogyPed = '12479';
+            break;
+
          default:
             gyogyPed= false;
             break;
@@ -142,8 +147,8 @@ function adatBonto(){
             pszichologus= '4268';
             break;
             
-         case 'ÉZS':
-               pszichologus= '5277';
+         case 'KSK':
+               pszichologus= '12268';
             break;
             
          case 'FPZ':
@@ -157,7 +162,15 @@ function adatBonto(){
          case 'ZSA':
             pszichologus= '10646';   
             break;
-
+           
+         case 'BB':
+            pszichologus= '12470';   
+            break;
+         
+         case 'ATB':
+         pszichologus= '12498';   
+         break;
+            
          
          default:
             pszichologus= false;
@@ -177,7 +190,7 @@ function adatBonto(){
        fvTaneve =  tanevAzonosito(vizsgDatum);
 
       // Adatok mentése a Localstorage-be
-      gyerekMindenAdata = [vezeteknev, utonev,vizsgDatum, diagnozis, osztalyfok, hanyadikVizsg,megfigyelesVoltE, gyogyPed,pszichologus,OA, KerelmezoFehId,beErkezett,mikorFigyelteMeg,fvTaneve]
+      gyerekMindenAdata = [oktAz,vezeteknev, utonev,vizsgDatum, diagnozis, osztalyfok, hanyadikVizsg,megfigyelesVoltE, gyogyPed,pszichologus,OA, KerelmezoFehId,beErkezett,mikorFigyelteMeg,fvTaneve];
       localStorage.setItem('vizsgaltGyerek',JSON.stringify(gyerekMindenAdata));
          // segédváltozók a tevékenység felviteléhez:
          localStorage.setItem('pszichoMegNemVolt','igaz');
@@ -188,7 +201,7 @@ function adatBonto(){
       document.getElementById('Aktualis-nev-Zoli').innerText=`${vezeteknev} ${utonev}`
       
       //teszt
-   console.log('teljes név: '+teljesnev+' Vezetéknév: '+vezeteknev+' Utónév '+utonev+'; Vizsgálat ideje: '+vizsgDatum+'; Diagnózis '+ diagnozis+
+   console.log('oktatási azonosító: '+ oktAz +'; teljes név: '+teljesnev+'; Vezetéknév: '+vezeteknev+'; Utónév '+utonev+'; Vizsgálat ideje: '+vizsgDatum+'; Diagnózis '+ diagnozis+
    '; Osztályfok: '+osztalyfok+'; Vizsgálat típusa: '+hanyadikVizsg+'; Megfigyelés volt-e? '+megfigyelesVoltE+'; gyógypedagógus: '+gyogyPed+ '; pszichológus: '+pszichologus+
    ' Okatatási intézmény: '+oktatasiInt+ ' OM kód: ' +OA)
 }
@@ -262,29 +275,7 @@ function utonevBonto(nev){
        return toReturn;
       }
 
-
-// Elmentett adatok felhasználása:
-
-function regiAdat(){
-   let mapped = Object.keys(localStorage).map(key =>`<button onclick="mentettBetolto('${key}')">${key}</button>`)
-   let toRender  = mapped.reduce((akku,actu)=>{return akku+actu},'<div id="korabbi-gyerekek">');
-   toRender += '<style>.korabbi-gyerekek{display:felx; flex-direction:column; width: fit-content;}</style></div>';
-   document.querySelector('.Zoli-container').innerHTML+= toRender;
-   document.getElementById('adat-bonto').remove();
-
-}
-
-function mentettBetolto(kivalasztottStorage){
-   [vezeteknev, utonev,vizsgDatum, diagnozis, osztalyfok, hanyadikVizsg, gyogyPed,pszichologus,OA, KerelmezoFehId,beErkezett] = JSON.parse(localStorage['vizsgaltGyerek'])
-   document.getElementById('korabbi-gyerekek').remove();
-   document.getElementById('Aktualis-nev-Zoli').innerText=`${vezeteknev} ${utonev}`
-}
-
-
    menuTelepito();
-
-   //TEST-hez:
-//document.getElementById('Zoli-tablazat-adat').value = 'Joó Sebestyén Sámuel	70/372-8091	igen			BTM tanulási	11. osztály	2023.03.09.	8:00					aktuális				VBG	MZG	Makói József Attila Gimnázium	2023.02.21.	intézmény'
 
 
 

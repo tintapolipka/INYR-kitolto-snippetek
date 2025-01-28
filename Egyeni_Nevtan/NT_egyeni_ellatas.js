@@ -1,4 +1,4 @@
-/*Egyéni Pszichológiai  Ellátás*/
+/*Egyéni Pszichológiai  Ellátás  ver: 1.2/2024 */
 // Variables:
 let szakember;
 let kezdoDatum;
@@ -94,13 +94,28 @@ function datumArrKeszito() {
 }
 
 // előkészítő funkciók:
+/*
+case 'ATB':
+         pszichologus= '12498';   
+         
+*/
+
+
 function kiLattael() {
   let ellatoSzakember = prompt(
-    "Ki végezte az ellátást? Kérlek írd be a monogrammját! Zsuzsi: ÉZS / Eszter: SZE / Zoli: MZG / Peti: FPZ / Alen: ZSA "
+    "Ki végezte az ellátást? Kérlek írd be a monogrammját! \nBea: ATB  \nBrigi: BB \nSári: KSK  \nEszter: SZE \nZoli: MZG \nPeti: FPZ \nAlen: ZSA "
   );
-  if (/zsu|Ézs/i.test(ellatoSzakember)) {
-    ellatoSzakember = "5277";
+  if(/ATB|bea/i.test(ellatoSzakember)) {
+    ellatoSzakember = '12498'
   }
+
+  if(/brig|BB/i.test(ellatoSzakember)) {
+    ellatoSzakember = '12470'};
+
+  if(/ksk|sár/i.test(ellatoSzakember)) {
+    ellatoSzakember = '12268';
+  };
+  
   if (/eszt|sze/i.test(ellatoSzakember)) {
     ellatoSzakember = "9770";
   }

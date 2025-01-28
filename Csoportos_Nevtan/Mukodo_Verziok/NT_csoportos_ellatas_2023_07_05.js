@@ -1,4 +1,4 @@
-//CS_Valaszto_Letrehozo ver 1.0.6
+//CS_Valaszto_Letrehozo ver 1.0.5
 
 //Variables:
 let szakember = [];

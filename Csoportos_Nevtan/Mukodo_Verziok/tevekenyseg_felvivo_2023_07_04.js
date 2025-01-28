@@ -1,14 +1,12 @@
-//CS_ellatas_felvivo ver 1.0.6
+//CS_ellatas_felvivo ver 1.0.0
 
 // Variables
-    let szakember, oktataisInt, elsoAlkalomDatum, foglDatumok, foglTemak, fejlTeruletek, oraHossza, fejlTerv, alkalomSzam;
+    let szakember, oktataisInt, elsoAlkalomDatum, foglDatumok, foglTemak, fejlTeruletek, oraHossza, fejlTerv;
     foglDatumok = JSON.parse(localStorage.CS_fogldatumok);
-    let utolsoAlkalomDatum;
-    let MA, eddigFelvittAlkalmakGlobal, uccsoFelvittAlkalom,tanevUtolsoNapja,hianyzoAlkalmak ;
     
 // Fő LEFUTTATANDÓ FUNKCIÓ!    
 function kezdjukMarEl(){
-  [csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv,alkalomSzam] = JSON.parse(localStorage.NT_aktualis_csoport);
+  [csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv] = JSON.parse(localStorage.NT_aktualis_csoport);
       
     // Feltéve, hogy a csoportok felvételénél vagyunk katt a tevékenységekre:
     if(/inyr.hu\/Csoport\/Adatlap/.test(window.location.href)
@@ -18,7 +16,7 @@ function kezdjukMarEl(){
   if(!szakember[0]){tobbSzakemberMeghatarozo();}  
 }
 //különben hibaüzenet és return:
-else {alert ('Kérlek nyisd meg a Csoport adatlapját a CS_valaszto_letrehozo-val annak a csoportnak, ahová tevékenységet akarsz felvenni, és próbáld újra!'); return;}; 
+else {alert ('Kérlek nyisd meg a Csoport adatlapját annak a csoportnak, ahová tevékenységet akarsz felvenni, és próbáld újra!'); return;}; 
 
 setTimeout(()=> {folyamatKoveto()},3000);
 
@@ -58,14 +56,9 @@ function szakemberMeghatarozo(){let kinyertNev = document.querySelectorAll('div.
       setTimeout(()=>{tevekenysegModalBezaro()},700);
 }
 
-function tobbSzakemberMeghatarozo(){
-  let kinyertNevek = 
-  document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[13].textContent ?
-  document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[13].textContent.match(/[A-Z].+/)[0].split(', '):
-  document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[6].textContent.match(/[A-Z].+/)[0].split(', ');
-
+function tobbSzakemberMeghatarozo(){let kinyertNevek = document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[13].textContent.match(/[A-Z].+/)[0].split(', ');
   console.log('kinyertNevek: '+kinyertNevek)
-  function szakemberKiegeszito(){localStorage.setItem('NT_aktualis_csoport',JSON.stringify([csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv,alkalomSzam]));}
+  function szakemberKiegeszito(){localStorage.setItem('NT_aktualis_csoport',JSON.stringify([csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv]));}
 
     
     document.querySelectorAll('h4[class="fa fa-folder-open fa-2x"]')[0].parentElement.click();
@@ -86,23 +79,17 @@ function tobbSzakemberMeghatarozo(){
 
 // Az a funkció, ami ellenőrzi, hogy hol tart a a felvitel folyamata:
 function folyamatKoveto(){
-  // Folyamatos kitöltést, vagy egy intervallumra felvitel van-e kiválasztva?
-  if(alkalomSzam == "intervallum" && localStorage.CS_folyamat_koveto == "választási szakasz"){
-    intervallumKitoltes();
-  } else {/**/
- 
-  // Folyamatos kitöltés
   //Hogyan állunk a felvitt tevékenységekkel?
-    MA = new Date();
-    
-    eddigFelvittAlkalmakGlobal = felvittDatumGyujto()
-    uccsoFelvittAlkalom = new Date(eddigFelvittAlkalmakGlobal[0]);
-    tanevUtolsoNapja = new Date(`${MA.getFullYear()}.06.16`);
-    
-    
+    let MA = new Date();
+    let eddigFelvittAlkalmakGlobal = felvittDatumGyujto()
+    let uccsoFelvittAlkalom = new Date(eddigFelvittAlkalmakGlobal[0]);
+    let tanevUtolsoNapja = new Date(`${MA.getFullYear()}.06.16`);
+    // Az adott dátum a tanév időtartamában van?
+    function tanevbenVanE(datumom){return Boolean(datumom.getMonth()<5 || (datumom.getMonth()==5 && datumom.getDate<15) || datumom.getMonth()>8)}
     
     // az utolsó felvitt alkalom óta kimaradt alkalmak  
-      //Ha a tanévben vagyunk még, akkor lehet használni a MA-t, ha már nem akkor a tanév végét kell használni: 
+      //Ha a tanévben vagyunk még, akkor lehet használni a MA-t, ha már nem akkor a tanév végét kell használni:
+          let hianyzoAlkalmak; 
           //Ha volt utolsó felvitt alkalom (tehát legalább 1 felvitt alkalom):
           if(uccsoFelvittAlkalom != 'Invalid Date'){
           hianyzoAlkalmak = datumArrKeszito(kovetkezoAdottNap(uccsoFelvittAlkalom,ellatasNapja), tanevbenVanE(MA)? MA : tanevUtolsoNapja);
@@ -111,9 +98,9 @@ function folyamatKoveto(){
           hianyzoAlkalmak.shift();
           }
           console.log('hianyzoAlkalmak: '+ hianyzoAlkalmak)}
-    /**/}
-          // Az adott dátum a tanév időtartamában van?
-          function tanevbenVanE(datumom){return Boolean(datumom.getMonth()<5 || (datumom.getMonth()==5 && datumom.getDate<15) || datumom.getMonth()>8)};
+  
+      
+
       //folyamat állás kiválasztása
   switch (localStorage.CS_folyamat_koveto) {
     case 'választási szakasz':
@@ -382,7 +369,7 @@ function egyAlkalomFelvitele(idopont,leiras){
 
 function kiLocalStoregebol(){
   if(!localStorage['NT_aktualis_csoport']){alert('Kérlek használd a csoportválsztó funkciót, hogy tudjam melyik csoportot kell felvinnem! Köszi!')}
-  [csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv,alkalomSzam] = JSON.parse(localStorage['NT_aktualis_csoport']);
+  [csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv] = JSON.parse(localStorage['NT_aktualis_csoport']);
 }
 
     function fejlTeruletValaszto(foglDatumok){
@@ -504,43 +491,8 @@ function hetNapjaSzoveggel(hetnapjaSzammal){
   return toReturn;
 }
 
-// Intervallum kitöltés:
-
-function intervallumKitoltes(){
-if(!confirm(`A CS_Valaszto_Letrehozo-ban egy konkrét kezdő és befejező dátum között minden hétre egy alkalom felvitele lett kiválasztva a ${hetNapjaSzoveggel(ellatasNapja)}i napra. 
-Valóban ezt a kitöltési formát választod?`)){
-    alert('Ez esetben nyisd meg a CS_Valaszto_Letrehozo snippetet, és válaszd "Rendszeres kitöltés" opciót, majd kezdd újra a kitöltést a CS_ellatas_felvivo-vel!');
-    return;
-   }
-  
-  // A beadott dátum formátumának ellenőrző, javító funkciója 
-  function datumTisztito(elso_utolso){ 
-  let adat = prompt(`Mi legyen a felvitt időintervallum ${elso_utolso} napja? (Dátumformátum: éééé.hh.nn)`);
-  let koztesArr = adat.split('.');
-  let evSzam = koztesArr[0].match(/\d{4}/)!=null ? koztesArr[0].match(/\d{4}/)[0]: false;
-  let hoSzam = koztesArr[1].match(/\d{2}/)!=null ? koztesArr[1].match(/\d{2}/)[0]: false;
-  let napSzam = koztesArr[2].match(/\d{2}/)!=null ? koztesArr[2].match(/\d{2}/)[0]: false;
-  if(!Boolean(evSzam.length==4 && +evSzam>2018 && hoSzam.length==2 && +hoSzam<=12 && napSzam.length==2)){
-    alert('Nem megfelelő dátumformátum! Próbáld újra!');
-    return false;
-    } else {return evSzam+'.'+hoSzam+'.'+napSzam;}
-  } 
-  //Kezdő alkalom bekérése:
-  elsoAlkalomDatum = new Date(datumTisztito('első'));
-  //Befejező alkalom bekérése:
-  utolsoAlkalomDatum = new Date(datumTisztito('utolsó'));
-  foglDatumok = datumArrKeszito(elsoAlkalomDatum,utolsoAlkalomDatum);
-  console.log('Foglalkozás dátumok: '+ foglDatumok);
-  localStorage.setItem('CS_fogldatumok',JSON.stringify(foglDatumok));
-  foglTemak = fejlTeruletValaszto(foglDatumok);
-  console.log('Fejlesztési témák: '+ foglTemak);
-  localStorage.setItem('CS_folyamat_koveto','tevékenység felvitel');
-  teljesTanev(foglDatumok);
-  
-}
-
   //TESZTHEZ
-  [csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv,alkalomSzam] = JSON.parse(localStorage.NT_aktualis_csoport);
+  [csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv] = JSON.parse(localStorage.NT_aktualis_csoport);
   if(csoportNev&&csoportURL&&oktataisInt&&ellatasNapja){
     kezdjukMarEl()}
     else {alert('Előbb válassz csoportot!')};

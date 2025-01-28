@@ -1,8 +1,8 @@
-//CS_ellatas_felvivo ver 1.0.6
+//CS_ellatas_felvivo ver 1.0.4
 
 // Variables
     let szakember, oktataisInt, elsoAlkalomDatum, foglDatumok, foglTemak, fejlTeruletek, oraHossza, fejlTerv, alkalomSzam;
-    foglDatumok = JSON.parse(localStorage.CS_fogldatumok);
+foglDatumok = JSON.parse(localStorage.CS_fogldatumok);
     let utolsoAlkalomDatum;
     let MA, eddigFelvittAlkalmakGlobal, uccsoFelvittAlkalom,tanevUtolsoNapja,hianyzoAlkalmak ;
     
@@ -58,12 +58,7 @@ function szakemberMeghatarozo(){let kinyertNev = document.querySelectorAll('div.
       setTimeout(()=>{tevekenysegModalBezaro()},700);
 }
 
-function tobbSzakemberMeghatarozo(){
-  let kinyertNevek = 
-  document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[13].textContent ?
-  document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[13].textContent.match(/[A-Z].+/)[0].split(', '):
-  document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[6].textContent.match(/[A-Z].+/)[0].split(', ');
-
+function tobbSzakemberMeghatarozo(){let kinyertNevek = document.querySelectorAll('div.col-lg-6 div[class="col-lg-6"]')[13].textContent.match(/[A-Z].+/)[0].split(', ');
   console.log('kinyertNevek: '+kinyertNevek)
   function szakemberKiegeszito(){localStorage.setItem('NT_aktualis_csoport',JSON.stringify([csoportNev,csoportURL,szakember,oktataisInt,ellatasNapja,oraHossza,fejlTerv,alkalomSzam]));}
 

@@ -1,0 +1,284 @@
+let velemeny = `
+klik202764901/00273 -        /2024
+
+
+Szakértői vélemény
+a pedagógiai szakszolgálati intézmények működéséről szóló 15/2013. (II.26.) EMMI rendelet 22. § (2)
+bekezdése alapján a gyermek első felülvizsgálatáról
+
+Személyi adatok                                                              Gondozási szám: CSMSZ7593
+
+
+Név: Gréczi Noémi
+Óvoda: nagycsoport
+Születési hely, idő: Szeged, 2018. 07. 26.
+A vizsgálat időpontjában a gyermek életkora: 5; 5 év
+A gyermek oktatási azonosító száma: 73642034628
+Anyja neve: Dukai Krisztina
+Gondviselő neve, lakcíme: Gréczi Ferenc, 6900 Makó, Nyúl utca 14.
+Előző vizsgálat időpontja: 2023. 05. 05.
+Előző vizsgálat eredménye: Kevert specifikus fejlődési zavar
+
+A vizsgálat ideje: 2024. 01. 17.
+A vizsgálat jellege: Szakértői kirendelés az Oktatási Hivatal megbízásából
+
+Jelenlegi intézmény neve, címe: Makói Óvoda Kassai Utcai Tagintézménye, 6900 Makó, Kassai u. 3.
+
+A vizsgálat előzményei
+
+
+Anamnesztikus adatok: Az előzmények és az anamnézis részletesen megtalálható iratanyagában. 
+Anamnézise kóroki tényezőt valószínűsít. 
+
+Eddigi ellátásának személyi, tárgyi feltételei: Heti 2 alkalommal részesül gyógypedagógiai fejlesztésben.
+
+Óvodai jellemzéséből: Korának megfelelően fejlett kislány, tiszta, ápolt, rendezett megjelenésű. Mandulaműtét miatt hiányzott ebben a félévben 3 hétig. Társait elfogadja, baráti kapcsolatokat alakít ki. Barátságos, kedves kislány. Felnőttekkel elfogadó, kéréseinket teljesíti. Nyugodtabb társakkal szeret játszani. Általában kiegyensúlyozott, nyitott, derűs, vidám. Közlékeny, szabálytartó, ragaszkodó. Ha sérelem éri, azonnal szól. Érzelmeit kimutatja, mély és tartós érzelem megnyilvánulásai vannak. Főleg szeretetét mutatja ki, megöleli a társait, a felnőtteket. Minden tevékenységben szívesen részt vesz, kedveli a puzzlet, a babaszobai játékokat. Zene iránt érdeklődik, zeneórára jár. Szabálytartó, szabályok szerint cselekszik. Dalos játékokban szívesen vesz részt. Több területen elmaradást mutat, nyelvi készsége, figyelme, feladatértési nehézségei miatt nem kitartó. Állandó motoros késztetése van. Ringatózik, himbálózik, csapkod a kezével (repked), összerezzen.
+Gyógypedagógus véleményéből: Noémi a foglalkozásokon rendszeresen részt vesz, azokon készséggel együttműködik. Az asztali feladatokat szívesen végzi, az új szabályokat is életkorának megfelelő szinten tanulja és alkalmazza. Nagymozgása és figyelme fejlesztendő, biztatást, pozitív megerősítést igényel. Úgy gondolom, hogy a fejlesztő foglalkozások folytatása mellett további sikerekre számíthatunk. Néha nyugtalan, mintha szorongana valamitől. Ilyenkor a távolba mered néhány pillanatig, vagy elmeséli egy régi élményét, utána folytatja a feladatot. További egy év óvodai nevelést javaslok, a fejlesztés folytatása mellett.
+
+Vizsgálati tények
+
+
+Az elvégzett gyógypedagógiai, logopédiai, pszichológiai felülvizsgálat eredményei, a kiállított felülvizsgálati jegyzőkönyv pedagógiai, gyógypedagógiai véleményének, valamint előzetes dokumentációjának elemzése alapján a gyermek továbbra is sajátos nevelési igényű:
+
+Pszichológiai vizsgálat:
+Szomatikusan korának megfelelően fejlett, rendezett megjelenésű gyermek. A vizsgálati helyiségbe szülei nélkül jön be. A vizsgálat során barátságos, együttműködő. Figyelme felkelthető, kétszemélyes helyzetben rögzíthető, enyhe motoros nyugtalanság jellemzi. Feladattudata életkorának megfelelő, feladatértése helyenként támaszigényes. A feladatvégzésben motivált. Munkatempója átlagos.
+Az intellektuális képességek standardizált mérőeszköze szerint (WPPSI–IV) a kortársakkal való összehasonlítás alapján aktuálisan normálövezeten belüli, átlagos intelligenciaszinten funkcionál. Képességstruktúrája egyenetlen képet mutat.
+A Verbális megértés index összesített csoportpontja a legmagasabb saját profilján belül, a normál, magas-átlagos övezetben helyezkedik el. A Verbális megértés skála méri a verbális fogalomalkotást, a verbális gondolkodást, valamint a környezetből való információ-felvételt. Noémi az Általános ismeretek és a Közös jelentés feladatban is korátlagát meghaladóan teljesített.
+A Téri-vizuális skála csoportpontja az alacsony átlagos övezetben helyezkedik el. A Téri-Vizuális Index a téri feldolgozás és a vizuo-motoros integráció mérőeszköze. Eredménye a Mozaik próbában korátlagos, míg a Tárgykirakó feladat esetében gyengébben teljesített.
+A Fluid gondolkodás index az összefüggések megértésének, a következtetések levonásának képességéről szolgáltat információval, melynek értéke a határövezetben helyezkedik el, a gyermek itt teljesített profilján belül a leggyengébben. A skálához tartozó feladatok megértése nehézséget okozott számára, a Képi fogalomalkotás esetében nagyon kevés helyes választ adott.
+A Munkamemória Index a vizuális emlékezőképességet vizsgálja, magában foglalja a figyelmet, a koncentrációt, a mentális kontrollt, és a gondolkodást. A magasabb szintű megismerő folyamatokhoz, valamint a teljesítményhez, és a tanuláshoz elengedhetetlen. A skála értéke alacsony átlagos színvonalú.
+A Feldolgozási Sebesség skála a határövezet és alacsony-átlagos övezet határán helyezkedik el. A Feldolgozási sebesség az egyszerű, ismétlődő információk hiba nélküli, gyors feldolgozásának képességét méri, illetve magában foglalja a rövidtávú vizuális emlékezetet, a figyelmet, és a vizuo-motoros koordinációt.
+Összegzés: Jelen képességvizsgálata alapján a gyermek mentális képességei normálövezetiek, teljesítménye a skálák és az egyes feladatok szintjén is hullámzó. Erősségként verbális képességei emelhetők ki, míg a feldolgozási sebesség és a fluid gondolkodás terén eredménye korátlagától jelentősebb elmaradást mutat. A vizuális logikára irányuló feladatok esetében feladatértési nehézség tapasztalható.
+
+Gyógypedagógiai, logopédiai vizsgálat:
+Általános jellemzés: Noémi szomatikusan életkorának megfelelően fejlett, ápolt, gondozott gyermek. A vizsgálóhelyiségbe édesanyja kíséretében érkezik. Szülőről problémamentesen leválik. Figyelme felkelthető, rövid ideig tartható, külső és belső ingerek mentén könnyen terelődik. Feladattudata kialakulóban. Feladatértése, feladattartás korátlagtól elmaradó. Munkatempója változó. Kétszemélyes feladathelyzetben együttműködő, könnyen motiválható. Motoros nyugtalanság jellemzi, feladathelyzetben tartani rövidebb ideig lehetett.
+Általános ismeretei: Önmagára és családjára irányuló általános ismeretei megfelelők.
+Téri és idői tájékozódása életkorától elmaradó szintű. Téri irányok cselekvés során történő alkalmazása bizonytalan, a mögé és alá esetében sikertelen. Téri irányok megnevezése, relációs szavak használata nem megfelelő. A napszakok közül a reggel és este fogalmát ismeri. A napokat és évszakokat helyesen felsorolta. Jobb és bal irányokat téveszti. Keresztező mozgásokat nem hajtott végre. 
+Rajzkészség, finommotorika: A ceruzát jobb kézben, eltérő ceruzafogással fogja. Ceruzakezelése görcsös. Változó nyomatékkal dolgozik. Vizuális minták másolása során bizonytalan, többszöri magyarázat és bemutatás után sem sikerül pontosan lemásolnia a formákat. Két- és háromütemű szeriális sor szabályát felismerni nem tudta. Szögletes formát nem alakított, kört egy alkalommal próbált másolni, leginkább csak hullámvonalat rajzolt.
+Mennyiségi ismeretek: Növekvő sorrendben 40-ig számolt. Csökkenő sorrendben 10-től helyesen számlált. Ujjait helyesen megszámlálta, ujjnyitás paralel. Korongokat 10-es számkörben megszámol. Sok-kevés, ugyanannyi, több-kevesebb fogalmát ismeri, de bizonytalan. Globális mennyiségfelismerés kialakulóban. Konkrét tevékenységbe ágyazott műveletet nem tudott helyesen végezni, nevezett és elvont számokkal nem tud dolgozni.
+Beszéd: Spontán beszélgetésbe bevonható. Beszéde érthető, szókincse korátlagos.
+Az artikulációs vizsgálat során nem tapasztaltam hangcseréket a gyermeknél.
+Az expresszív szókincs vizsgálatára A LAPP aktív szókincs teszt került felvételre. A teszten 16 nyerspontot szerzett (főnévi teljesítmény: 12 nyerspont, igei teljesítmény: 4 nyerspont), melynek T-értéke 47, ez átlagos teljesítményt jelent.
+A Magyar Mondatutánmondási Teszt Rövid változat (MAMUT-R) növekvő hosszúságú és változó szerkezeti komplexitású mondatok pontos, azonnali ismétlésén keresztül a szintaktikai fejlettséget vizsgáló eljárás. A tesztben kétféle egyszerű, alany-ige-tárgy összetevőket tartalmazó mondat és háromféle, vonatkozó mellékmondatot tartalmazó összetett mondat szerepel. A teszten 10/1 pontot szerzett, ez átlag alatti teljesítményt jelent.
+TROG-Nyelvtani Szerkezetek Megértése Teszt vizsgálati vélemény:
+A kvantitatív eredmények összesítése
+Blokk
+Feladat
+I/N
+A
+Főnév
+I
+B
+Ige
+I
+C
+Melléknév
+I
+D
+Kételemű kombináció
+I
+E
+Tagadás
+I
+F
+Háromelemű kombináció
+I
+G
+Egyes/többes számú személyes névmás
+N
+H
+Felcserélhető szereplők
+I
+J
+Egyes/többes számú főnévrag
+N
+K
+Középfok/felsőfok
+N
+M
+Téri ragok (-ban és –on)
+N
+N
+Középre beágyazott mellékmondat, alany-alany
+N
+O
+X, de nem Y
+N
+P
+Fölött és alatt
+
+
+Q
+Nemcsak X, de Y is
+
+
+R
+Jobbra beágyazott mellékmondat, alany-X
+
+
+S
+Sem X, sem Y
+
+
+T
+Középre beágyazott mellékmondat, X-alany
+
+
+
+
+TELJESÍTETT BLOKKOK SZÁMA
+7
+
+
+STANDARD PONTSZÁM
+86
+
+
+PERCENTILIS
+18
+
+
+ÉLETKOR-EKVIVALENS
+4:5
+
+
+A kvantitatív eredmények összesítése:
+A standard pontszámok értelmezése megegyezik az átfogó intelligenciateszteknél alkalmazott értékeléssel. A percentilis az a százalékos érték, ami azt fejezi ki, hogy a sztenderdizálásba bevont minta mekkora hányadára jellemző az adott pontszám. Azt jelzi, hogy a tipikus fejlődésű gyermekek körében várhatóan hány százalék teljesít a gyermek által elért pontszámon, vagy az alatt, illetve, hogy mennyi teljesít jobban. A gyermek teljesítménye életkorától kismértékben elmaradó szintű.
+A kvalitatív eredmények összesítése:
+Az utolsó 5 felvett blokkban a hibák száma: 13. Ezen belül volt olyan blokk, melynek mind a 4 iteme hibás (K blokk), vagyis szisztematikusan hibázott egy blokk több tételében. Ez azt jelzi, hogy nem értette meg a szerkezetet, helyette következetesen más, helytelen elv alapján választott megoldást.
+
+
+
+
+Megállapítások
+
+
+Összegzés: Bizottságunk második alkalommal, az Oktatási Hivatal megbízásából, beiskolázása kapcsán vizsgálta az 5; 5 éves nagycsoportos óvodás gyermeket. A pszichológiai vizsgálati eredményeink alapján a gyermek mentális képességei normálövezetiek, teljesítménye a skálák és az egyes feladatok szintjén is hullámzó. Erősségként verbális képességei emelhetők ki, míg a feldolgozási sebesség és a fluid gondolkodás terén eredménye korátlagától jelentősebb elmaradást mutat. A vizuális logikára irányuló feladatok esetében feladatértési nehézség tapasztalható. A logopédiai, gyógypedagógiai vizsgálati eredményeink alapján a gyermek pedagógiai teljesítménye jelentős elmaradást jelez a figyelem, emlékezet, finommotorika, grafomotorika, mennyiségi ismeretek, téri tájékozódás területén. Sajátos nevelési igénye továbbra is igazolódott. Javasoljuk megkezdett gyógypedagógiai fejlesztésének folytatását. Javasoljuk további óvodai nevelését a 2023/2024-es és a 2024/2025-ös nevelési években.
+
+Kiemelt figyelmet igénylő gyermek, tanuló – különleges bánásmódot igényel a 2011. évi CXC törvény a nemzeti köznevelésről (Nktv.), 4. § 13. a) pontja alapján: 
+aa) sajátos nevelési igény igazolódott (4. § 25.)
+
+Megállapítjuk, hogy a gyermek/tanuló egyéb pszichés fejlődési zavar (súlyos tanulási zavar, Kevert specifikus fejlődési zavar) okán sajátos nevelési igényű, különleges bánásmódot, kiemelt figyelmet igényel.
+
+Javasolt intézkedések
+
+
+Szakértői véleményünk 2023 decemberétől folyamatában érvényes, a gyermek státusza változatlan.
+
+Javasoljuk további óvodai nevelését a 2023/2024-es és a 2024/2025-ös nevelési években az Oktatási Hivatal HTAN/482-6/2024 iktatószámú határozata alapján.
+
+A Nktv. 47. § (1), (3) bekezdése alapján sajátos nevelési igényének megfelelő óvodai nevelését javasoljuk:
+a többi gyermekkel együtt
+
+Az óvodai nevelését ellátó kijelölt intézmény: jelenlegi intézménye 
+
+Sajátos nevelési igényének fennállása miatt, különleges bánásmód keretében kötelező pedagógiai célú habilitációs, rehabilitációs foglalkozásokat kell számára szervezni, heti foglalkoztatási időkerete a 2011. évi CXC törvény 6. számú melléklete alapján. 
+
+Javasolt terápiák: gyógypedagógiai fejlesztés 
+2023/2024-es nevelési évben:
+Komplex gyógypedagógiai fejlesztés: minimum heti 2 órában, ebből:
+Komplex gyógypedagógiai fejlesztés (mozgásfejlesztéssel): heti 1 órában
+Komplex gyógypedagógiai fejlesztés (figyelem és nyelvi fejlesztéssel): heti 1 órában
+2024/2025-ös nevelési évben:
+Komplex gyógypedagógiai fejlesztés: minimum heti 3 órában, ebből:
+Komplex gyógypedagógiai fejlesztés (mozgásfejlesztéssel): heti 1 órában
+Komplex gyógypedagógiai fejlesztés (figyelemfejlesztéssel): heti 1 órában
+Komplex gyógypedagógiai fejlesztés (nyelvi fejlesztéssel): heti 1 órában
+Szakemberszükséglete: szakirányú végzettségű gyógypedagógus
+
+A sajátos nevelési igényű gyermeknek/ tanulónak joga, hogy különleges bánásmód keretében állapotának megfelelő pedagógiai, gyógypedagógiai ellátásban részesüljön attól kezdődően, hogy igényjogosultsága hatályos. 
+Az Nktv. 47§ (7) bekezdése alapján: Az enyhe értelmi fogyatékos, beszédfogyatékos vagy pszichés fejlődési zavarral küzdő sajátos nevelési igényű tanulót két gyermekként, a mozgásszervi, érzékszervi (látási, hallási), középsúlyos értelmi fogyatékos, autizmus spektrum zavarral küzdő vagy halmozottan fogyatékos gyermeket, tanulót három gyermekként kell figyelembe venni az óvodai csoport, iskolai osztály, kollégiumi csoport létszámának számításánál, ha nevelés-oktatásuk a többi gyermekkel, tanulóval együtt történik.
+
+Fejlesztendő területek:
+Mozgásfejlesztés: nagymozgások ügyesítése, alapmozgások koordinációjának fejlesztése, egyensúly-gyakorlatok; finommotoros tevékenység alakítása, kéz és ujjak ügyesítése, kézkorrekciós mozgások végzése; mozgásutánzás ügyesítése, a két testfél mozgásának összerendezése, saját mozgás észlelésének pontosítása, a látás és a mozgás összerendezése, a szem-kéz szem-láb koordináció javítása; ritmusérzék fejlesztése, ritmus-mozgás-beszéd koordinálása
+Vizuális részképességek javítása: látásérzékelés és észlelés fejlesztése, differenciálás, diszkrimináció, azonosságok, különbözőségek felismertetése, alaklátás-formaállandóság, alak-háttér felfogás, vizuális minta helyes követése, vizuális szeriális készség alakítása, vizuális megfigyelő és elemző készség
+Akusztikus részképességek fejlesztése: hallásészlelés és érzékelés fejlesztése, hallási figyelem, diszkrimináció, differenciálás, akusztikus szerialitás, tagolási, szótagolási és hanganalizáló gyakorlatok
+Térbeli, idői tájékozódás fejlesztése: téri helyzetek, viszonylatok észlelésének alakítása, téri fogalmak bővítése, idői fogalmak kialakítása, időrendiség észrevevése, fogalmak használata
+Orientációs készség fejlesztése: jobb-bal irányok szerinti tájékozódás saját testen-térben-síkban, tárgyak egymáshoz való viszonyának elemzése, relációs fogalmak tudatosítása a megértés és kifejezés szintjén, balról jobbra haladó soralkotás megtanítása, a helyes soralkotás begyakorlása
+Figyelem fejlesztése: tartósság, intenzitás, akaratlagos, szelektív és megosztott figyelem terjedelmének növelése, megfigyelőképesség 
+Emlékezet fejlesztése vizuális és verbális területen
+Beszéd és nyelvi készségek fejlesztése: mondatok grammatikai rendezése, egymásutániság- időrendiség helyes visszaadása, összefüggő beszéd fejlesztése, eseményképről szövegalkotás, verbális emlékezet fejlesztése, beszédészlelés, beszédértés 
+Grafomotoros fejlesztés: vizuomotoros koordináció, domináns kéz erősítése, az íráshoz szükséges testhelyzet begyakorlása, helyes írószer-tartás elsajátítása, ábrázoló készség fejlesztése, ábrázolókedv alakítása, formák-irányok követése, differenciálása
+Gondolkodás műveleteinek alkalmazása: azonosságok-különbözőségek észrevétele, összehasonlítás, változás megfigyelése, analizáló-szintetizáló ---- hiányok pótlása, rész-egész viszony, szimmetria --- gondolkodás, analógiás gondolkodás fejlesztése, logikai-funkcionális összefüggések felismerése, lényegkiemelés, általánosítás, következtetések átlátása, absztrahálás
+Matematikai készségek fejlesztése: számlálás, számfogalom kialakítása életkornak megfelelően, globális mennyiség felismerés, mennyiségi relációk alkotása, matematikai jellegű feladatok és velük végezhető manipulációk, mennyiségi állandóság
+Iskolai életmódra való felkészítés, önállóság, szokásrendszerek alakítása
+Érzelmi, akarati érettség alakítása: feladatértés, végrehajtás, feladattudat
+Szociális érettség alakítása
+Általános tájékozottság fejlesztése
+Feladathelyzetben való viselkedés javítása: aktivizálás növelése, monotóniatűrés, kudarctűrő magatartás javítása
+Önbizalom, önértékelés fejlesztése, sikerélmények biztosítása
+
+A hivatalból elrendelt kötelező felülvizsgálat (15/2013. (II. 26.) EMMI rendelet a pedagógiai szakszolgálati intézmények működéséről 22.§ (3) bekezdése szerint) ideje: 2024/2025-ös tanév, helye: Csongrád-Csanád Vármegyei Pedagógiai Szakszolgálat Vármegyei Szakértői Bizottsága 6725 Szeged, Bécsi krt. 38. 
+
+Tájékoztatást adtunk arról, hogy a szülő/gondviselő/gyám a részletes írásbeli szakértői vélemény átvételének időpontjától számított 15 napon belül tehet írásbeli nyilatkozatot, amennyiben nem ért egyet a szakértői véleményben foglalt tartalommal. Ha a szülő/gondviselő/gyám a szakértői vélemény vonatkozásában egyet nem értéséről a szakértői bizottság felé nyilatkozik, annak vezetője köteles erről a tényről a gyermek lakóhelye, ennek hiányában tartózkodási helye szerint illetékes tankerületi központot tájékoztatni. A szülő/gondviselő/gyám közvetlenül is eljárást indíthat az illetékes tankerületi központnál a szakértői vélemény felülvizsgálata céljából. Ebben az esetben a szakértői bizottság értesítése is szükséges. Amennyiben a kézhezvételtől számított 15 napon belül nem tesz nyilatkozatot, és nem indítja meg az eljárást, az egyetértését megadottnak kell tekinteni. Kérjük, hogy a szakértői véleményt szíveskedjenek megőrizni és az adatokat bizalmasan kezelni! Kérjük a szülőt/gondviselőt/gyámot, hogy intézményváltási szándékáról mindenképpen értesítse bizottságunkat.
+
+A gyermek minden további vizsgálatán szakértői véleményünk bemutatása szükséges!
+
+Szeged, 2024. 01. 30.
+
+Vizsgálta/konzultáció: 
+___________Máté-Juhász Kinga – okleveles pszichológus 
+___________Megyeri Csilla – gyógypedagógus, logopédus (esetfelelős)
+
+
+szakértői bizottság vezetője:
+
+	Vágvölgyi Attila
+ 	 főigazgató-helyettes
+
+
+Kapják:
+Gréczi Ferenc, 6900 Makó, Nyúl utca 14.
+Makói Óvoda Kassai Utcai Tagintézménye, 6900 Makó, Kassai u. 3.
+Irattár
+
+
+`
+
+
+const oktAz = velemeny.match(/\d{11}/);
+
+	const teljesNev= velemeny.match(/Név:\s.+/i)[0].substring(4,).trim(); 
+
+const vezeteknev = teljesNev.split(/\s/)[0];
+const utonev = teljesNev.split(/\s/).reduce((accu,actu,index)=>{
+return index? accu.concat([actu]) : accu },[]).join(' ')
+
+const diagnozis = diagnozisExtr(velemeny);
+
+const osztalyfok = osztalyfokExtr(velemeny);
+
+const vizsgDatum = velemeny.match(/(?<=A vizsgálat ideje:)\s*\d{4}.\s*\d{2}.\s*\d{2}./);
+
+const fvTaneve = velemeny.match(/\d{4}\/\d{4}(?=.+tanév)/);
+
+
+const megfigyelesVoltE = false;
+
+const gyogyPed = velemeny.match(/(?<=__+).+(?=gyógypedagógus)/)[0].replace(/_/g,'').replace('–','').trim();
+
+// kivonatoló funkciók	
+function osztalyfokExtr(velemeny){
+	const intezmeny = velemeny.match(/óvoda|iskola|bölcsőde|otthon/)[0];
+	let toReturn = '';
+	if(intezmeny === 'óvoda'){
+		toReturn = 'Óvodába járó'
+	} else if(intezmeny === 'bölcsőde'|| intezmeny ==='otthon'){ 
+		toReturn = 'Óvodába nem járó'
+	} else if(intezmeny === 'iskola'){ 
+toReturn = Number(velemeny.match(/\d+\.*\s*(?=oszt)/)[0].replace(/\D/,''))
+	
+	}
+  return toReturn;
+  }
+
+
+function diagnozisExtr(velemeny){
+const diagnozisTxt = velemeny.match(/sajátos nevelési igényű|tanulási nehézség|nem igazolódik/ig)[0] 
+let toReturn;
+if (diagnozisTxt === 'sajátos nevelési igényű'){ toReturn = 'SNI'} else if(
+diagnozisTxt === 'tanulási nehézség'){
+toReturn = 'BTM'} else {'semmi'};
+return toReturn;  
+}
+

@@ -1,4 +1,4 @@
-//CS_Valaszto_Letrehozo ver 1.0.6
+//CS_Valaszto_Letrehozo ver 1.0.5
 
 //Variables:
 let szakember = [];
@@ -110,7 +110,7 @@ function ujCsoportFelvetele() {
        
         <hr>
         B) Kitöltés megadott időintervallumban:
-        <p><input type="radio" name="alkalomSzam" id="intervallum">Konkrét kezdő és befejező dátum között minden hétre egy alkalom felvitele az órarendben szereplő napra.</p>
+        <p><input type="radio" name="alkalomSzam" id="intervallum">Konkrét kezdő és befejező dátum között inden hétre egy alkalom felvitele az órarendben szereplő napra.</p>
        
         <hr>
         <button id="csoportMentes" onclick="csoportMentes()">Új csoport felvétele</button>
